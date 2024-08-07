@@ -2,8 +2,12 @@ name: CI
 
 on:
   push:
-    branches:
+    branches: [" main "]
+    branches-ignore: ['ignore']
+    paths: ".github/*"
       - main
+    
+
   pull_request:
     branches:
       - main
