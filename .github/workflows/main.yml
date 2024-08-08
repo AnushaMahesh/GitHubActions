@@ -1,6 +1,6 @@
 name: A Basic Workflow
 
-on:
+on: 
   push:
     branches: [" main "]
     
@@ -10,7 +10,7 @@ on:
     branches: [" main "]
    
 
-  workflow dispatch:
+  workflow_dispatch:
   
 
 jobs:
@@ -30,12 +30,12 @@ jobs:
         echo add other actions to build
         echo test and deploy to run your project
 
-  build db:
+  build_db:
     runs-on: windows-latest
     steps:
      - run: echo "Hello windows"
 
-  build api:
+  build_api:
     needs: build
     runs-on: windows-latest
     steps:
